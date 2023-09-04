@@ -3,10 +3,79 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #444444;
 }
 
-.container {
+.btn {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: #DDDDDD;
+    color: #222222;
+    font-size: 1rem;
+    font-weight: 900;
+    cursor: crosshair;
+    padding: 0 10px;
+    border: 2px solid black;
+}
+
+.small-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100px;
+    color: #DDDDDD;
+    border: 1px solid #DDDDDD;
+    cursor: crosshair;
+    padding: 0 20px;
+    margin: 0 10px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    background-color: #444444;
+    color: #DDDDDD;   
+}
+
+.account-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    background-color: #444444;
+    color: #DDDDDD;
+    margin: 0 20px 20px 20px;       
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #DDDDDD;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #DDDDDD;
+}
+
+
+
+.container {
+    display: grid;
+    grid-template-rows: max-content;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -14,3 +83,43 @@
     flex-direction: column;
 }
 
+.menu-bar {
+    display: grid;
+    grid-template-columns: 3fr 4fr 1fr;
+    top: 10px;
+    width: 100%;
+    height: 10vh;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    width: 50%;
+}
+
+.left-bar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-bar .small-button {
+    margin: 10px 10px 20px 10px;
+    width: 100%;
+}
+
+.main-content {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-bar {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

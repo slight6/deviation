@@ -1,3 +1,4 @@
+// npx tsc -w
 import { roll } from "./util.js";
 const outputAmount = document.getElementById("rollOutput");
 const rollDice = () => {
